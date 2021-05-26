@@ -1,0 +1,70 @@
+// 地图信息窗体
+@mixin map-window-css($form_width: 262px, $label_width: 80px) {
+  .map-infoWindow {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    padding: 8px 0;
+    box-shadow: 0px 30px 30px 0px rgba(212, 212, 212, 0.5);
+    .title-grid {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 48px;
+      padding: 0 20px;
+      border-bottom: 1px solid #f1f1f1;
+      .text {
+        color: #323232;
+        font-size: 18px;
+        font-weight: bold;
+      }
+      .el-icon {
+        cursor: pointer;
+        font-size: 18px;
+      }
+      .icon {
+        cursor: pointer;
+        width: 20px;
+        height: 20px;
+      }
+    }
+    .form-grid {
+      color: #505050;
+      font-size: 14px;
+      padding: 15px 20px;
+      .form-row {
+        width: $form_width;
+        display: flex;
+        color: #505050;
+        font-size: 14px;
+        margin-bottom: 10px;
+        .form-label {
+          width: $label_width;
+          text-align: right;
+          overflow: hidden;
+          text-overflow:ellipsis;
+          white-space: nowrap;
+        }
+        .form-content {
+          width: calc(100% - 8px - #{$label_width});
+          margin-left: 8px;
+          /*overflow: hidden;
+          text-overflow:ellipsis;
+          white-space: nowrap;*/
+        }
+        .form-a {
+          color: #06a8f9;
+          cursor: pointer;
+        }
+      }
+      .form-bottom {
+        display: flex;
+        justify-content: center;
+        .form-btn {
+          width: 260px;
+          padding: 8px 20px;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,91 @@
+.checkDialog{
+  .check-label{
+    +span{
+      display: inline-flex;
+      width: 200px;
+    }
+  }
+  .longName{
+    +span{
+      display: inline-flex;
+      width: 170px;
+    }
+  }
+  .el-dialog {
+    width: 1140px;
+  }
+  .el-col{
+    .check-label{
+      +span{
+        color: #646464;
+      }
+    }
+  }
+  .el-col-24{
+    .check-label{
+      +span {
+        display: inline-flex;
+        width: calc(100% - 170px);
+      }
+    }
+  }
+}
+@mixin mylabel($width:100px) {
+  width: $width;
+  text-align: right;
+  display: inline-block;
+  // font-weight:bold;
+  color:#000000;
+  font-size:14px;
+  margin-bottom: 16px;
+}
+.check-label{
+  @include mylabel
+}
+.longName{
+  @include mylabel(174px)
+}
+.dialogTitle{
+  font-weight: bold;
+  color: rgba(0, 0, 0, 1);
+  font-size: 16px;
+  margin-bottom: 16px
+}
+.dialogEdit{
+  font-size:14px;
+  .el-form-item{
+    margin-bottom: 24px;
+    // height: 32px;
+  }
+  .el-dialog {
+    width: 1136px;
+  }
+  .el-form-item__content{
+    &>div{
+      width: 215px;
+      .el-input__inner{
+        height: 32px;
+      }
+    }
+  }
+  .el-form-item__label{
+    width: 112px;
+    text-align: right;
+    font-weight:bold;
+    color: #606266;
+  }
+}
+
+.dialog-1-col{
+  .el-form--label-top .el-form-item__label{
+    padding: 0;
+  }
+  .el-form-item__content{
+    &>div{
+      width: 294px;
+      .el-input__inner{
+        height: 32px;
+      }
+    }
+  }
+}

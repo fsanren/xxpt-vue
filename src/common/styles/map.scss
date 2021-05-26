@@ -1,0 +1,46 @@
+.wmap-infowindow{
+  width: 302px;
+  height: 306px;
+  position: absolute;
+  z-index: 20;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 30px 30px 0px rgba(212, 212, 212, 0.5);
+  .title{
+    height: 56px;
+    color: #323232;
+    padding: 20px 20px 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 1px solid #eee;
+    h4{
+      img {
+        float: right;
+        cursor: pointer;
+      }
+    }
+  }
+  .content {
+    height: 249px;
+    overflow: auto;
+    padding: 18px 20px 15px 20px;
+    font-size: 14px;
+    color: #505050;
+    .info-item{
+      line-height: 21px;
+      margin-bottom: 10px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      a{
+        color: #06a8f9;
+        cursor: pointer;
+      }
+    }
+    button{
+      width: 100%;
+      padding: 8px 10px;
+      margin-top: 20px;
+    }
+  }
+}

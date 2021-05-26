@@ -1,0 +1,117 @@
+@import './variables.scss';
+@import './mixin.scss';
+@import './transition.scss';
+@import './common.scss';
+@import './element-ui.scss';
+@import './list-common.scss';
+@import './dialog.scss';
+@import './upload.scss';
+@import './btn.scss';
+
+body {
+  height: 100%;
+  padding-right: 0 !important;
+  overflow: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif;
+}
+
+label {
+  font-weight: 500;
+}
+
+html {
+  height: 100%;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+h1,h2,h3,h4 {
+  margin: 0;
+}
+
+#app{
+  height: 100%;
+}
+
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  outline: none;
+  text-decoration: none;
+}
+
+div:focus{
+  outline: none;
+ }
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+
+//main-container全局样式
+.app-main{
+  height: 100%;
+  overflow: scroll;
+}
+
+//main-container全局样式
+.app-main1{
+  height: 100%;
+  overflow: scroll;
+  background-color: #ffffff;
+  .el-alert--info{  //嵌套路由页面样式调整
+    background-color: #ffffff;
+    padding: 0;
+    height: 100%;
+    .el-alert__content{
+      width: 100%;
+      height: 100%;
+      padding: 0;
+    }
+  }
+}
+
+
+.app-container {
+  padding: 20px;
+  height: 100%;
+}

@@ -1,0 +1,128 @@
+// 工单列表页
+.list-common{
+  padding: 20px 20px 5px 20px;
+  .search-form{
+    .el-form-item{
+      margin-bottom: 18px;
+    }
+    .el-row .el-col{
+      .el-form-item__label{
+        padding: 0 0 0 0
+      }
+      &:not(:first-child){
+        .el-form-item__label{
+          padding: 0 0 0 16px
+        }
+      }
+    }
+    .el-form-item__content{
+      &>div{
+        width: calc(100% - 0px);
+      }
+    }
+    .el-select{
+      input.el-input__inner{
+        height: 32px;
+        line-height: 32px;
+      }
+    }
+    .el-input{
+      input.el-input__inner{
+        height: 32px;
+        line-height: 32px;
+      }
+    }
+  }
+  .btns-left{
+    text-align: left;
+    .el-dropdown{
+      margin-left: 8px;
+    }
+  }
+  .btns-right{
+    text-align: right;
+  }
+  .my-table .el-table {
+     th{
+      height: 54px;
+      padding: 4px 0;
+    }
+    tr{
+      height: 53px;
+      td{
+        padding: 4px 0;
+      }
+    }
+  }
+  .el-table__body-wrapper{
+    height: 530px;
+    overflow-y: auto;
+  }
+  .auto-height-table {
+    .el-table__body-wrapper{
+      height: auto;
+    }
+  }
+  .el-pagination{
+    margin-top: 20px;
+    text-align: right;
+  }
+  .order-create{
+    .el-form--label-top .el-form-item__label{
+      padding: 0;
+    }
+    .el-form-item__content{
+      &>div{
+        width: 294px;
+        .el-input__inner{
+          height: 32px;
+        }
+      }
+    }
+    .el-dialog {
+      width: 1140px;
+    }
+  }
+  .order-detail{
+    span.title {
+      font-weight: bold;
+      width: 70px;
+      display: inline-block;
+      &+span{
+        font-weight: bold;
+      }
+    }
+  }
+  .my-table{
+    margin-top: 22px;
+    .cell{
+      .el-button--text{
+        margin-left: 11px;
+        &:hover {
+          color: #858585;
+        }
+        &:not(:last-child):after{
+          color: #ced5df;
+          pointer-events: none;
+          width: 1px;
+          height: 1em;
+          content: '|';
+          position: relative;
+          left: 6px;
+          display: inline-block;
+        }
+      }
+    }
+  }
+
+  .greenDot {
+    color: green;
+  }
+  .yellowDot {
+    color: orange;
+  }
+  .redDot {
+    color: red;
+  }
+}
+
